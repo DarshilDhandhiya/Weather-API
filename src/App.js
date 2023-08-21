@@ -1,9 +1,11 @@
 // src/WeatherApp.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './WeatherApp.css';
 
 const API_KEY = '3a025f10f908f6e20e33e01afa73c32b';
 const API_URL = `https://api.openweathermap.org/data/2.5/weather`;
+
 
 function WeatherApp() {
   const [weatherData, setWeatherData] = useState(null);
