@@ -144,3 +144,32 @@ body {
     transform: translateX(-5px);
   }
 }
+.typewriter {
+  overflow: hidden; /* Ensures the content is not visible outside the containing element */
+  border-right: 0.15em solid #000000; /* Cursor effect */
+  white-space: nowrap; /* Prevents line breaks */
+  margin: 0 auto; /* Centers the text within the container */
+  letter-spacing: 0.15em; /* Adjusts spacing between letters */
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Keyframe animation for typing the text */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000000;
+  }
+}

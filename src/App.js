@@ -40,9 +40,9 @@ function WeatherApp() {
       </div>
       {weatherData && (
         <div className="weather-container">
-          <h2 className="weather-header">
-            Weather in {weatherData.name}, {weatherData.sys.country}
-          </h2>
+        <h2 className="weather-header typewriter">
+          Weather in {weatherData.name}, {weatherData.sys.country}
+        </h2>
           <p className="weather-data">Temperature: {weatherData.main.temp}°C</p>
           <p className="weather-data">Weather: {weatherData.weather[0].description}</p>
           <p className="weather-data">Humidity: {weatherData.main.humidity}%</p>
@@ -56,3 +56,4 @@ function WeatherApp() {
 }
 
 export default WeatherApp;
+
