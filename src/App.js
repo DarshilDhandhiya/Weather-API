@@ -28,7 +28,7 @@ function WeatherApp() {
 
   return (
     <div className="container">
-      <h1 className="weather-header">Weather App</h1>
+      <h1 className="weather-header">Weather Check</h1>
       <div className="input-container">
         <input
           className="input-field"
