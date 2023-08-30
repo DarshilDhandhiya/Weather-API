@@ -33,7 +33,7 @@ function WeatherApp() {
         <input
           className="input-field"
           type="text"
-          placeholder="Enter city name"
+          placeholder="Enter City Name"
           value={city}
           onChange={e => setCity(e.target.value)}
         />
